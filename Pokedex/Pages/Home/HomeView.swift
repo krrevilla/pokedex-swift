@@ -27,6 +27,7 @@ struct HomeView: View {
                 }
                 .padding(.horizontal, HomeView.pagePadding)
             
+
             let data = viewModel.searchInput.count > 0 ? viewModel.filteredResults : viewModel.results
             
             LazyVGrid(columns: column, spacing: 8) {
